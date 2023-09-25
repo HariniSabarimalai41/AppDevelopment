@@ -1,0 +1,171 @@
+
+.contact-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    
+  }
+  
+  .contact-content {
+    background-color: rgba(23, 20, 30, 0.689); 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    min-height: auto;
+    
+  }
+  
+
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+
+  
+  /* .contact-content:hover {
+    transform: translateY(-10px);  Apply hover effect 
+  } */
+  
+  .contact-h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    color: aliceblue;
+  }
+  
+  .contact-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-textarea 
+  input[type="text"]{
+    width: 98%;
+    padding: 10px;
+    border: none;
+    background-color: #808386af;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .contact-textarea 
+  input[type="text"]{
+    width: 98%;
+    padding: 10px;
+    border: none;
+    background-color: #808386af;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .contact-textarea {
+    resize: vertical;
+  }
+  
+  .contact-button {
+    background-color: #3d6f8c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .contact-button:hover {
+    background-color: #832538;
+  }
+  button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #88237b;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+ 
+  input[type="file"]:focus {
+    outline: none; 
+    box-shadow: none; /* Remove the default focus box shadow */
+  }
+  
+  /* Add hover effect for the "Choose File" button */
+  input[type="file"]:hover {
+    border-color: #cf6076;
+  }
+  /* Apply styles to make the "No file chosen" text smaller */
+label[for="attachment"]::after {
+    font-size: 0px;
+  }
+  .form-group p {
+    font-size: 16px;
+    color: rgb(195, 192, 174);
+    margin-top: 5px;
+  }
+
+  .but1 {
+    background-color: #210c7c;
+  }
+  /* Add this to your CSS file */
+.popup-message-container {
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    animation: rollDown 0.5s ease-in-out forwards, fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes rollDown {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
