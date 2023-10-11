@@ -1,0 +1,73 @@
+.table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #ccc;
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  .table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+  }
+  
+  .table-sm th, .table-sm td {
+    padding: 0.3rem;
+  }
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .btn-container .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-container .btn-add {
+    background-color: rgb(0, 128, 119);
+    width: 50px;
+    height: 35px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-container .btn-edit {
+    background-color: rgb(0, 125, 167);
+    width: 50px;
+    height: 35px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-container .btn-delete {
+    background-color: lightcoral;
+    width: 80px;
+    height: 35px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
+  

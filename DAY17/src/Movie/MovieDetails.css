@@ -1,0 +1,413 @@
+.movie {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgb(26, 26, 39);
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.movie__intro {
+    width: 90%;
+}
+
+.movie__backdrop {
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    object-position: 0 35%;
+}
+
+.movie__detail {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 225px;
+}
+
+.movie__detailLeft {
+    margin-right: 30px;
+}
+
+.movie__poster {
+    width:300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    /* margin-bottom: 200px; */
+    justify-content:space-between ;
+}
+
+.movie__detailRightTop > div{
+    text-shadow: 0px 0px 5px rgb(26, 26, 39);
+    margin-bottom: 20px;
+}
+
+.movie__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+.movie__genres {
+    margin: 1.25rem 0;
+}
+
+.movie__genre {
+  padding: .5rem;
+  margin-right: 1rem;
+  border-right: 1px solid grey; /* Add a grey vertical line */
+}
+
+.movie__voteCount {
+    margin-left: 1rem;
+}
+
+.movie__detailRightBottom {
+    margin: 2rem 0;
+    flex: 0.8;
+    color: aliceblue;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.synopsisText > div:last-of-type {
+    margin-left: auto;
+}
+
+.movie__links {
+    position: relative;
+    bottom: -30px;
+    display: flex;
+    gap: 320px;
+    width: 75%;
+    margin-bottom: 80px;
+    right: 110px;
+}
+
+.link__heading{
+  font-size: 2.2rem;
+  position: relative;
+  bottom: -20px;
+  background: linear-gradient(to right, #ffffcc 0%, #663300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.movie__homeButton {
+    background-color:darkcyan;
+    width: 80px;
+    padding: 15px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+  }
+
+.movie__imdbButton {
+    background-color:rgb(255, 255, 178);
+    color: rgb(26, 26, 39);
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .newTab {
+    margin-left: 1.4rem;
+  }
+
+.prod_company {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #ffffcc 0%, #663300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.movie__production {
+  width: 85%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 4rem;  
+}
+
+.movie__productionComapany {
+    width: 200px;
+    margin: 2rem;
+    
+}
+
+.productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.handle-fav .add {
+  background-color: red;
+   color: white;
+   font-size: 15px;
+   height: 50px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+  
+  .handle-fav .add:hover {
+    background-color: darkred;
+  }
+  
+  .handle-fav .rem {
+    background-color: rgb(0, 169, 169);
+    color: white;
+    font-size: 15px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .handle-fav .rem:hover {
+    background-color: rgb(0, 99, 99);
+  }
+
+  .trailer__heading{
+    background: linear-gradient(to right, #ffffcc 0%, #663300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    font-size: 2.2rem;
+    position: relative;
+    display: flex;
+    bottom: -20px;
+    right: 300px;
+    gap: 150px;
+    margin-bottom: 0px;
+  }
+  
+  .trailer-list {
+  position: relative;
+  bottom: 0px;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  margin-bottom: 30px;
+}
+
+.trailer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%; 
+  height: 200px; 
+}
+
+/* .trailer-card{} */
+
+.trailer::-webkit-scrollbar {
+  display: none;
+}
+  
+.stream__heading{
+  font-size: 2.2rem;
+  position: relative;
+  display: flex;
+  bottom: -20px;
+  right: 0px;
+  gap: 150px;
+  margin-bottom: 80px;
+  background: linear-gradient(to right, #ffffcc 0%, #663300 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stream{
+  font-size: 18px;
+  position: relative;
+  bottom: 20px;
+  gap: 20px;
+}
+
+.stream__website {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.stream-card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.stream-card {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  color: aliceblue;
+  max-width: 200px;
+  transition-duration: 200ms;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stream-card h3{
+  color: aliceblue;
+}
+
+.stream-card:hover {
+  background-color: #121212;
+}
+
+.stream-logo {
+  width: 70px; 
+  height: 70px; 
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 10px; 
+}
+
+.stream-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Add this at the end of your MovieDetails.css file */
+
+.cast__heading h2 {
+  font-size: 2.2rem;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px; /* Adjust margin as needed */
+  background: linear-gradient(to right, #ffffcc 0%, #663300 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.movie__cast {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden; /* Enable vertical scrolling */
+  max-height: 300px; /* Set a maximum height for the cast list */
+  max-width: 1300px;
+}
+
+.movie__cast h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cast__list {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;
+  padding-bottom: 10px;
+  flex-wrap: nowrap; /* Ensure items stay in a single line */
+}
+
+.cast__item {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.cast__item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cast__item p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.cast__item:hover img {
+  transform: scale(1.1);
+}
+
+/* For Firefox */
+.movie__cast::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.user-score h2{
+  position: relative;
+  left: 270px;
+  top: 60px;
+  gap: 10px;
+  font-weight: normal;
+}
+
+.circle-progress {
+  transform: rotate(-90deg);
+  position: relative;
+  bottom: 10px;
+  left: 180px;
+}
+
+.circle-progress-bar {
+  transition: stroke-dasharray 0.3s ease-in-out;
+  gap: 10px;
+  /* stroke:burlywood;  */
+}
+
+.user-score {
+  position: relative;
+  margin-top: -130px;
+  left: 20px;
+}
+
+.user-score-text {
+  position: absolute;
+  top: 90px;
+  left: 230px;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: burlywood;
+}
