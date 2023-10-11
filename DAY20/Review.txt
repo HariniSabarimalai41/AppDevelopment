@@ -1,0 +1,1 @@
+Review For Front End Integeration With User Security Authorization Based On Role And Microservices Done From Day 15 - Day 20 were introspected.
