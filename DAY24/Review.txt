@@ -1,0 +1,1 @@
+Final Review For Front End Integeration With User Security Authorization Based On Role And Microservices with Backend Services based on Use Case Provided Done From Day 1 - Day 23 were introspected.
